@@ -1,0 +1,25 @@
+version: '3.5'
+services:
+  monerod:
+    image: sethsimmons/simple-monerod:latest
+    restart: unless-stopped
+    container_name: monerod
+    volumes:
+      # Replace the ~ with the parent folder of your .bitmonero folder if you don't want to use the default location
+      - ~:/home/monero
+    ports:
+      - 18080:18080
+      - 18089:18089
+    command:
+      # Add any additional Monerod startup commands you need here
+      - "--rpc-restricted-bind-ip=0.0.0.0"
+      - "--rpc-restricted-bind-port=18089"
+      - "--no-igd"
+      - "--no-zmq"
+      - "--enable-dns-blocklist"
+  watchtower:
+    image: containrrr/watchtower:latest
+    container_name: watchtower
+    restart: unless-stopped
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
