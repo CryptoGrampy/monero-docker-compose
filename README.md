@@ -35,7 +35,12 @@ I - [monero-docker-compose](#monero-docker-compose)
 
 # Requirements:
 
-- STOP any running Monero full nodes, including the node run by the GUI.  Rather than running a full node FROM the GUI, you'll point the GUI at your new 'remote' node running at ip: 127.0.0.1 port: 18089
+- STOP any running Monero full nodes, including the node run by the GUI.  Rather than running a full node FROM the GUI, you'll point the GUI at your new 'remote' node running at ip: 127.0.0.1 port: 18089 as shown in photo below.
+
+<center> 
+<img src="assets/remote_node.png" width="800">
+</center>
+
 - You'll need space to run a full Monero node.  (140 GB)
 - You MUST run Docker Compose as a regular user- not root.  
 
