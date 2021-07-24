@@ -1,6 +1,10 @@
 # monero-docker-compose
 Run a FULL Monero Node on your Home Computer (Or Server... Or Home Server 😉 ) using Docker Compose
 
+First of all, this is 100% based off of both SethForPrivacy's guide, his Docker Compose file, and his Monero Docker image. The main differences are that this Docker Compose file runs a full node using the Monero GUI's default Monero blockchain directory (~/.bitmonero) rather than the default Docker volume.  Additionally, Seth CREATED AND MAINTAINS the Monero docker image that this code pulls from DockerHub.  I highly recommend reading Seth's [EXCELLENT MONERO NODE ON DOCKER GUIDE](https://sethforprivacy.com/guides/run-a-monero-node/).  Also, GO THANK SETH FOR HIS AMAZING WORK.
+
+With that.  
+
 This Docker Compose script is meant to be run from a regular Linux (possibly Mac or Windows Subsystem for Linux) computer that has Docker installed and uses the default Monero blockchain save location that the Monero GUI wallet uses: ~/.bitmonero.  
 
 If you already have data in this location, Docker will simply use what you have to start up the node, and pick up where your previous node or Monero GUI wallet left off.  If you don't have ANY data in this location, Docker will do everything for you.
@@ -37,7 +41,7 @@ I - [monero-docker-compose](#monero-docker-compose)
 
 # Learning Docker:
 
-If you want to learn Docker and Docker Compose, check out [This Tutorial](https://www.youtube.com/watch?v=3c-iBn73dDE&t=4243s)
+If you want to learn Docker and Docker Compose (If you can do Linux command line basics, you can do this tutorial), check out [This Tutorial](https://youtu.be/3c-iBn73dDE)
 
 # Run Commands:
 
