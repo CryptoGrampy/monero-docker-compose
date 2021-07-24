@@ -5,8 +5,8 @@ services:
     restart: unless-stopped
     container_name: monerod
     volumes:
-      # Replace the ~ with the parent folder of your .bitmonero folder if you don't want to use the default location
-      - ~:/home/monero
+      # Replace ~/.bitmonero with your bitmonero folder location if you don't want to use the default location
+      - ~/.bitmonero:/home/monero/.bitmonero
     ports:
       - 18080:18080
       - 18089:18089
