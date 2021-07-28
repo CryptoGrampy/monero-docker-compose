@@ -17,11 +17,12 @@ I - [monero-docker-compose](#monero-docker-compose)
 - [monero-docker-compose](#monero-docker-compose)
 - [Table of Contents](#table-of-contents)
 - [Who is this meant for?](#who-is-this-meant-for)
-- [Requirements:](#requirements)
-- [Learning Docker:](#learning-docker)
-- [Run Commands:](#run-commands)
+- [Requirements](#requirements)
+- [Learning Docker](#learning-docker)
+- [Run Commands](#run-commands)
 - [Seed the Network!](#seed-the-network)
-- [References:](#references)
+- [Donate](#donate)
+- [References](#references)
 
 # Who is this meant for?
 
@@ -33,7 +34,7 @@ I - [monero-docker-compose](#monero-docker-compose)
 
 - Someone who just likes the ease of use of Docker Compose
 
-# Requirements:
+# Requirements
 
 - STOP any running Monero full nodes, including the node run by the GUI.  Rather than running a full node FROM the GUI, you'll point the GUI at your new 'remote' node running at ip: 127.0.0.1 port: 18089 as shown in photo below.
 
@@ -44,11 +45,11 @@ I - [monero-docker-compose](#monero-docker-compose)
 - You'll need space to run a full Monero node.  (140 GB)
 - You MUST run Docker Compose as a regular user- not root.  
 
-# Learning Docker:
+# Learning Docker
 
 If you want to learn Docker and Docker Compose (If you can do Linux command line basics, you can do this tutorial), check out [This Tutorial](https://youtu.be/3c-iBn73dDE)
 
-# Run Commands:
+# Run Commands
 
 - The below commands *must* be run from the same location as your docker-compose.yml file. If you're not in the same folder, they will not work.  
 
@@ -64,7 +65,15 @@ If you want to learn Docker and Docker Compose (If you can do Linux command line
 
 If you want to contribute to the Monero network by seeding the Monero blockchain, you will need to go into your router admin settings, open up port 18080 and point it at the ip of whatever computer/laptop/server is running the Monero node.  
 
-# References: 
+
+# Donate
+
+- If you enjoy this software, please feel free to send $XMR tips to [CryptoGrampy](https://twitter.com/CryptoGrampy)!
+
+- $XMR : 85HmFCiEvjg7eysKExQyqh5WgAbExUw6gF8osaE2pFrvUhQdf1HdD6XSTgAr4ECYMre6HjWutPJSdJftQcYEz3m2PYYTE6Y
+  
+
+# References
 
 [Seth's Docker Guide](https://sethforprivacy.com/guides/run-a-monero-node/)
 
