@@ -7,6 +7,8 @@ With that.
 
 This Docker Compose script is meant to be run from a regular Linux (possibly Mac or Windows Subsystem for Linux) computer that has Docker installed and uses the default Monero blockchain save location that the Monero GUI wallet uses: ~/.bitmonero.  
 
+If you don't already have this .bitmonero folder, this script is NOT for you, and you'll need to either switch a few lines to use a regular docker volume, use or create your own ~/.bitmonero and ~/.bitmonero/lmdb directories before running the script. 
+
 If you already have data in this location, Docker will simply use what you have to start up the node, and pick up where your previous node or Monero GUI wallet left off.  If you don't have ANY data in this location, Docker will do everything for you.
 
 This Docker Compose file includes [Watchtower](https://github.com/containrrr/watchtower), which will automagically update your Monero node as soon as an update is available.
